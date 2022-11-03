@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원가입양식</title>
+  <link href="./basic1.css" rel="stylesheet">
+
+  <style>
+        .top_content{
+        width:960px;
+        height: 80px;
+        position: relative;
+        margin-bottom: 10px;
+        margin: 0px;
+        padding: 0px;
+    }
+    /*위쪽 상단 부분*/
+    .top_header{   /* 로그인 회원가입*/
+        width: 960px;
+        height: 30px;  /*수정할 부분*/
+    }
+    .logo{     /* logo 들어있는 박스 */    
+        width: 800px;
+        height: 80px;
+        text-align: center;
+        line-height: 100%;   /*글 간격*/
+        margin: 0px auto;
+    }
+    .logo>a{  /* sign up, sign in 정보 */
+        display: inline-block;
+        overflow: hidden;
+        padding: 20px 40px;    /* sign up, sign in 간격*/
+        margin: 0px auto;
+    }
+    .logo h3{
+        display: inline-block;
+        color: rgb(163, 100, 49);
+    }
+    .logo img{
+        width: 50px;
+        height: 50px;
+        line-height: 70px;
+        margin-right: 10px;
+        margin-top:  50px;
+        margin: 0px auto;
+    }
+    .top_nav{       /*로그인 위, 오른쪽 마진*/
+        float: right;
+        margin-top: 5px;
+        margin-right: 30px;
+    }
+    .top_nav a{       /*로그인 hober크기*/   
+        display: inline-block;
+        padding: 0px 20px;
+        font-weight: 900;
+    }
+    .top_nav a:hover{
+        border-radius: 3px;   /*모서리 부분을 둥글게*/
+        background-color: rgb(247, 247, 247)
+    }
+    .member_form{
+        width: 960px;
+    }
+    table{
+      border-collapse: collapse;
+      border-spacing: 0px;
+      margin: 0px auto;
+    }
+    tr{
+      height: 40px;
+      line-height: 40px;
+    }
+    td{
+      border: 1px solid black;
+    }
+    .head1{
+      text-align: center;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+     }
+    .head1>h1{
+      margin-bottom: 10px;
+    }
+    .title{
+    width: 180px; 
+    background-color: beige;
+    text-align: center;
+   }
+   .content{
+    width: 300px;
+    padding-left: 10px;
+   }
+   .con1{
+    width: 250px;
+    height: 26px;
+   }
+  .p1{
+    width: 100px;
+    height: 26px;
+    line-height: 26px;
+  }
+  .a1{
+    width: 400px;
+    height: 26px;
+  }
+  .submit{
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  #submit, #reset{ /*  점(.) : 클래스 , # : id,  콤마(,) : 여러 선택자에 같은 스타일을 적용하고 싶을 때 */
+    width: 100px;
+    height: 26px;
+    background-color: papayawhip;
+    border-radius: 5px;
+    border: 0.8px solid rgb(152, 148, 148);
+
+  }
+  </style>
+</head>
+<body>
+          <!--header 부분-->
+          <div div class="top_header">
+            <!-- logo 부분 -->
+
+            <!--로그인 회원가입 사이트맵-->
+            <div class="top_nav">
+              <a href="login.html"><h5>sign in</h5></a>
+              <a href="join.html"><h5>sign up</h5></a>
+            </div>
+        </div>
+        <div class="top_content">
+            <div class="logo">
+                <a href="index.html"><img src="./images/icon.png"></a>
+                <a href="menu.html"><h3>소개</h3></a>
+                <a href="class.html"><h3>클래스</h3></a>
+                <a href="review.html"><h3>후기</h3></a>
+                <a href="news.html"><h3>새소식</h3></a>
+            </div>
+            </div>
+        <!--위쪽 상단 부분-->
+        <br/>
+            <hr width="960px">
+            <br/>
+            
+            
+  <form action="" name="membership">
+   <div class="member_form">
+     <table border="0">
+      <tr>
+        <td colspan="2" class="head1"><h1><br/>sign up<br/><br/></h1></td>
+      </tr>
+      <tr>
+        <td class="title"><label for="id">아 이 디</label></td>
+        <td class="content"><input class="con1" type="text" name="id" id="id" required/></td>
+      </tr>
+      <tr>
+        <td class="title"><label for="password">비밀번호</label></td>
+        <td class="content"><input  class="con1" type="password" name="password" id="password"  required placeholder="4자~12자공백제외 특수문자 영문자"/></td>
+      </tr>
+      <tr>
+        <td class="title"><label for="pwd">비밀번호확인</label></td>
+        <td class="content"><input  class="con1" type="pwd" name="pwd" id="pwd" required/></td>
+      </tr>
+      <tr>
+        <td class="title"><label for="name">이 름</label></td>
+        <td class="content"><input class="con1" type="text" name="name" id="name" required placeholder="이름입력하세요"/></td>
+      </tr>
+      <tr>
+        <td class="title"><label for="phone">휴대폰번호</label></td>
+        <td class="content"><input type="text" name="phone1" id="phone1" class="p1" style="text-align:center; width:50px;" /> - 
+          <input type="text" name="phone2" id="phone2" class="p1" style="text-align:center; width:78px;"/> - 
+          <input type="text" name="phone3" id="phone3" class="p1" style="text-align:center; width:79px;"/></td>
+      </tr>
+      <tr>
+        <td class="title"><label for="email">이메일</label></td>
+        <td class="content"><input  class="con1" type="email" name="email" id="email" /></td>
+      </tr>
+      <tr>
+        <td class="title"><label for="addr1">우편번호</label></td>
+        <td class="content"><input type="button" name="addr_btn" id="addr_btn" value="우편번호"/>
+                            <input type="text" name="addr1" id="addr1" readonly class="p1" /></td>
+      </tr>
+      <tr>
+        <td class="title"><label for="addr2">주소</label></td>
+        <td class="content"><input type="text" name="addr2" id="addr2" class="a1" readonly style="width:250px;"/></td>
+      </tr>
+      <tr>
+        <td class="title"><label for="addr3">상세주소</label></td>
+        <td class="content"><input type="text" name="addr3" id="addr3" class="a1" style="width:250px;"/></td>
+      </tr>
+      <br/>
+      <tr>
+        <td class="submit" colspan="2"><input type="submit" name="submit" id="submit" value="가입하기" style="cursor: pointer"/>&nbsp;&nbsp;&nbsp;
+          <input type="reset" name="reset" id="reset" value="새로작성" style="cursor: pointer"/></td>
+      </tr>
+      </table>
+
+ </div>
+
+</form> 
+</body>
+</html>

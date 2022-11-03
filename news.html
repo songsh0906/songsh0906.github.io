@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>review</title>
+    <link href="./basic1.css" rel="stylesheet">
+    <style>
+        .top_content{
+      /* 위치 고정 : 반드시 부모에게 width, height 값 설정 
+                      부모의 position: relative; 로 설정 */
+      width:960px;
+      height: 80px;  /*수정할 부분*/
+      position: relative;
+      margin-bottom: 10px;
+      margin: 0px;
+      padding: 0px;
+  }
+  /*위쪽 상단 부분*/
+  .top_header{   /* 로그인 회원가입*/
+      width: 960px;
+      height: 30px;  /*수정할 부분*/
+  }
+  .logo{     /* logo 들어있는 박스 */    
+      width: 800px;
+      height: 80px;
+      text-align: center;
+      line-height: 100%;   /*글 간격*/
+      margin: 0px auto;
+  }
+  .logo>a{  /* menu, store, delivery 정보 */
+      display: inline-block;
+      overflow: hidden;
+      padding: 20px 40px;    /*menu, store, delivery 간격*/
+      margin: 0px auto;
+  }
+  .logo img{
+      width: 50px;
+      height: 50px;
+      line-height: 70px;
+      margin-right: 10px;
+      margin-top:  50px;
+      margin: 0px auto;
+  }
+  .logo h3{
+        display: inline-block;
+        color: rgb(163, 100, 49);
+    }
+  .top_nav{       /*로그인 위, 오른쪽 마진*/
+      float: right;
+      margin-top: 5px;
+      margin-right: 30px;
+
+  }
+  .top_nav a{       /*로그인 hober크기*/   
+      display: inline-block;
+      padding: 0px 20px;
+      font-weight: 900;
+  }
+  .top_nav a:hover{
+      border-radius: 3px;   /*모서리 부분을 둥글게*/
+      background-color: rgb(247, 247, 247)
+  }
+
+
+table{
+    margin: 0px auto;
+    padding: 10px;
+    width: 960px;
+}
+.head1{
+      text-align: center;
+      border: none;
+     }
+.head1>h1{
+    text-decoration: underline;
+}
+.re{
+    margin-top: 20px;
+    height: 210px;
+    width: 300px;
+}
+.text1{
+    margin-left: 20px;
+}
+.text1>h3{
+    margin-bottom: 30px;
+    /*자간 넓히기*/
+}
+.submit2{
+    margin-right: 30px;
+    float: right;
+    border: none;
+  }
+  #submit2{ /*  점(.) : 클래스 , # : id,  콤마(,) : 여러 선택자에 같은 스타일을 적용하고 싶을 때 */
+    width: 80px;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 0.8px solid rgb(209, 206, 206);
+  }
+
+  footer{
+            width: 960px;  /* 100%*/
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin: 70px auto
+        }
+        hr{
+            width:960px;
+            margin: 0px auto;
+            /* margin-bottom: 10px;   수정할 부분 */
+        }
+        .footer_nav{
+            width:960px; /*수정할 부분*/
+            height : 40px;
+            line-height: 40px;
+            text-align: center;
+            margin: 0px auto;
+           /* margin-bottom: 10px;  수정할 부분*/
+        }
+        .footer_nav > a{
+            display: inline-block;
+            padding: 0px 10px;
+            font-size: 0.8rem;   /* 10pt, 12px, 0.8rem*/
+            
+        }
+        .footer_nav >a:hover{  /* a태그 글자(요소)에 마우스가 올라오면*/
+            color:blue;
+        }
+        .addr{
+            width:960px;
+            margin: 10px auto;
+
+        }
+        .addr li{
+          /* 수정할 부분 */
+            height : 22px;
+            line-height: 22px;
+            text-align: center;
+        }
+
+  </style>
+</head>
+
+<body>
+      <!--header 부분-->
+      <div div class="top_header">
+        <!-- logo 부분 -->
+
+        <!--로그인 회원가입 사이트맵-->
+        <div class="top_nav">
+            <a href="login.html"><h5>sign in</h5></a>
+            <a href="join.html"><h5>sign up</h5></a>
+        </div>
+    </div>
+    <div class="top_content">
+        <div class="logo">
+            <a href="index.html"><img src="./images/icon.png"></a>
+            <a href="introduction.html"><h3>소개</h3></a>
+            <a href="class.html"><h3>클래스</h3></a>
+            <a href="review.html"><h3>후기</h3></a>
+            <a href="news.html"><h3>새소식</h3></a>
+        </div>
+        </div>
+    <!--위쪽 상단 부분-->
+    <br/>
+    <hr width="960px">
+    <br/>
+
+
+     <table border="0">
+        <tr>
+            <td colspan="2" class="head1"><h1> 새소식 </h1><br/><br/></td>
+          </tr>
+
+          <tr>
+            <td class="re"><a href="#"><img src="./images/event1.jpg" width="300px" height="200px"><br></a></td>
+            <td class="text"><a href="#"><div class="text1"><h3>1 + 1 이벤트!!</h3>
+            수많은 성원에 힘입어 10월부터 12월까지 석달간 1 + 1 이벤트를 진행합니다!!<br/> 한 클래스 가격에 두 가지의 클래스 수업을 들어보세요!
+            <br/><br/>기간 : 2022.10.01 ~ 2022.12.31</div></a></td>
+          </tr>
+          <tr>
+            <td class="re"><a href="#"><img src="./images/event2.jpg" width="300px" height="200px"><br></a></td>
+            <td class="text"><a href="#"><div class="text1"><h3>후기 이벤트!!</h3>
+            라히 베이킹아카데미에서 클래스 수업을 들었다구요? <br/> 그럼 당장 후기를 작성해보세요! 여러분의 후기는 누군가에게 큰 도움이 될거에요.<br/>
+            후기를 작성해주시는 모든 분들께 다음 클래스 3,000원 할인 쿠폰을 드립니다!<br/><br/>
+            
+            기간 : 2022.08.20 ~ 2023.08.19
+            </div></a></td>
+          </tr>
+          <tr>
+            <td class="re"><a href="#"><img src="./images/holiday.jpg" width="300px" height="200px"><br></a></td>
+            <td class="text"><a href="#"><div class="text1"><h3>2022년 쉬어가는 날!</h3>
+            안녕하세요, 라히베이킹공방입니다. 벌써 2022년이 다가오고 있어요 시간 참 빠르네요ㅠㅠ<br/> 그래서 여러분의 스케쥴을 짜는데 어려움이 없게 2022년 쉬어가는 날을 알려드리려고 해요! 
+            <br/>자세한 내용은 클릭해서 달력을 확인해 주세요!<br/> 그럼 2022년도 열심히 달려보겠습니다!
+            </div></a></td>
+          </tr>
+          <tr>
+            <td class="re"><a href="#"><img src="./images/event3.jpg" width="300px" height="200px"><br></a></td>
+            <td class="text"><a href="#"><div class="text1"><h3>블랙 프라이데이인데 할인 받아야죠?</h3>
+            블랙 프라이데이를 맞이하여 라히 베이킹아카데미에서도 이벤트를 진행합니다!<br/> 딱 일주일간, 무려 클래스 40% 할인!!!<br/>
+            도대체.. 뭘 고민하시는거죠..?!<br/><br/>
+            
+            기간 : 2021.12.10 ~ 2021.12.17
+            </div></a></td>
+          </tr>
+          <tr>
+            <td class="re"><a href="#"><img src="./images/event4.jpg" width="300px" height="200px"><br></a></td>
+            <td class="text"><a href="#"><div class="text1"><h3>친구야! 같이 베이킹 클래스 듣자!</h3>
+            라히 베이킹공방에서 친구와 클래스 신청을 하면 할인 받을 수 있는 거 알고 계셨나요?<br/>2명이 신청하면 10%, 3명이 신청하면 20%를 할인 받을 수 있다구요!<br/>
+            얼른 지금 옆에 있는 친구와 라히 베이킹 클래스를 신청하세요!!<br/><br/>
+            
+            기간 : 선착순 50명 (마감!)
+            </div></a></td>
+          </tr>
+    </table>
+
+
+
+
+
+
+    <footer> <!-- 시멘틱 태그, 바닥글 : 회사주소, 전화번호, ... -->
+        <hr/>
+    <div class="addr">
+        <ul>
+            <li>상호 : 라히 베이킹공방  &nbsp;| &nbsp; 대표자 : ooo &nbsp; | &nbsp; </li>
+            <li>소재지 : 서울시 &nbsp; | &nbsp; 대표전화 : 02-1234-1234</li>
+            <li>Copyright&copy;2022 All Right Reserved</li>
+        </ul>
+    </div>
+                    <hr/>
+    <div class = "footer_nav">
+        <a href="#">서비스 이용약관</a> | 
+        <a href="#">개인정보처리방침</a> | 
+        <a href="#">이용서비스현황</a> | 
+        <a href="#">이용규정</a> | 
+    </div>
+    </footer>
+</body>
+</html>

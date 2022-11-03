@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>라히 베이킹아카데미 소개</title>
+    <link href="./basic1.css" rel="stylesheet">
+    <style>
+    .top_content{
+        width:960px;
+        height: 80px;  /*수정할 부분*/
+        position: relative;
+        margin-bottom: 10px;
+        margin: 0px;
+        padding: 0px;
+    }
+    /*위쪽 상단 부분*/
+    .top_header{   /* 로그인 회원가입*/
+        width: 960px;
+        height: 30px;  /*수정할 부분*/
+    }
+    .logo{     /* logo 들어있는 박스 */    
+        width: 800px;
+        height: 80px;
+        text-align: center;
+        line-height: 100%;   /*글 간격*/
+        margin: 0px auto;
+    }
+    .logo>a{  /* menu, store, delivery 정보 */
+        display: inline-block;
+        overflow: hidden;
+        padding: 20px 40px;    /*menu, store, delivery 간격*/
+        margin: 0px auto;
+    }
+    .logo img{
+        width: 50px;
+        height: 50px;
+        line-height: 70px;
+        margin-right: 10px;
+        margin-top:  50px;
+        margin: 0px auto;
+    }
+    .logo h3{
+        display: inline-block;
+        color: rgb(163, 100, 49);
+    }
+    .top_nav{       /*로그인 위, 오른쪽 마진*/
+        float: right;
+        margin-top: 5px;
+        margin-right: 30px;
+
+    }
+    .top_nav a{       /*로그인 hober크기*/   
+        display: inline-block;
+        padding: 0px 20px;
+        font-weight: 900;
+    }
+    .top_nav a:hover{
+        border-radius: 3px;   /*모서리 부분을 둥글게*/
+        background-color: rgb(247, 247, 247)
+    }
+    .table1{
+        width: 960px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .table2{
+        width: 960px;
+    }
+    .table3{
+        width: 400px;
+    }
+
+    .intro2{
+        width: 630px;
+        margin-top: 20px;
+        /*  vertical-align : top; */
+    }
+    .transportation{
+        width: 600px; 
+        height: 100px;
+    }
+    .transportation>div{
+        width: 600px; 
+        margin-left: 10px;
+    }
+    .text1{
+        margin-left: 30px;
+        word-spacing: 2px;
+        line-height: 2rem;
+    }
+
+
+
+    
+    footer{
+            width: 960px;  /* 100%*/
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin: 70px auto
+        }
+        hr{
+            width:960px;
+            margin: 0px auto;
+            /* margin-bottom: 10px;   수정할 부분 */
+        }
+        .footer_nav{
+            width:960px; /*수정할 부분*/
+            height : 40px;
+            line-height: 40px;
+            text-align: center;
+            margin: 0px auto;
+           /* margin-bottom: 10px;  수정할 부분*/
+        }
+        .footer_nav > a{
+            display: inline-block;
+            padding: 0px 10px;
+            font-size: 0.8rem;   /* 10pt, 12px, 0.8rem*/
+            
+        }
+        .footer_nav >a:hover{  /* a태그 글자(요소)에 마우스가 올라오면*/
+            color:blue;
+        }
+        .addr{
+            width:960px;
+            margin: 10px auto;
+
+        }
+        .addr li{
+          /* 수정할 부분 */
+            height : 22px;
+            line-height: 22px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    
+           <!--header 부분-->
+           <div div class="top_header">
+            <!-- logo 부분 -->
+
+            <!--로그인 회원가입 사이트맵-->
+            <div class="top_nav">
+                <a href="login.html"><h5>sign in</h5></a>
+                <a href="join.html"><h5>sign up</h5></a>
+            </div>
+        </div>
+        <div class="top_content">
+            <div class="logo">
+                <a href="index.html"><img src="./images/icon.png"></a>
+                <a href="introduction.html"><h3>소개</h3></a>
+                <a href="class.html"><h3>클래스</h3></a>
+                <a href="review.html"><h3>후기</h3></a>
+                <a href="news.html"><h3>새소식</h3></a>
+            </div>
+            </div>
+        <!--위쪽 상단 부분-->
+        <br/>
+            <hr width="960px">
+            <br/><br/>
+            
+            <table border="0" class="table1">
+                <tr>
+                    <td colspan="3" class="head1"><h1> 라히 베이킹 공방</h1><br/><br/></td>
+                  </tr>
+            </table>
+            <br/><br/><br/><br/>
+            <table border="0" class="table2">
+                <tr>
+                    <td class="intro1"><img src="./images/character.jpg" width="300px" height="300px"></td>
+                    <td class="intro2"><div class="text1">안녕하세요, 라히베이킹공방입니다. <br/>
+                    저희 라히베이킹공방은 베이킹에 관심이 많은 사람, 베이킹을 즐기는 사람, 가볍게 베이킹을 경험해보고 싶은 분들에게 적합한 클래스들이 많이 있습니다<br/>
+                    언제든 연락 주시면 친절하게 안내해드리겠습니다.</div></td>
+                  </tr>
+            </table>
+            <br/><br/><br/><br/><br/><br/><br/><br/>
+
+            
+            <table border="0" class="table3" style="width: 1000px;">
+                <tr>
+                    <td align="left" valign="top" class="transportation"><div><h3>지하철</h3><br/>
+                    3호선, 8호선 가락시장역 4번출구 약 100m 직진</div></td>
+                    <td class="map" rowspan="3"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6330.385145571555!2d127.04153625390623!3d37.503376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca512b1b5e77b%3A0x90048774d24a2a4f!2z66mA7Yuw7Lqg7Y287IqkIOyEoOumiQ!5e0!3m2!1sko!2skr!4v1667180342822!5m2!1sko!2skr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top" class="transportation">
+                        <div><h3>버스</h3><br/>
+                            간선버스 : 301, 401<br/>
+                            지선버스 : 3319,3416 </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top" class="transportation">
+                        <div><h3>자차</h3><br/>
+                           건물 내 지하 주차장 이용 <br/>근처 가락본동제1공영주차장에도 주차가 가능합니다</div></div>
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <footer> <!-- 시멘틱 태그, 바닥글 : 회사주소, 전화번호, ... -->
+                <hr/>
+            <div class="addr">
+                <ul>
+                    <li>상호 : 라히 베이킹공방  &nbsp;| &nbsp; 대표자 : ooo &nbsp; | &nbsp; </li>
+                    <li>소재지 : 서울시 &nbsp; | &nbsp; 대표전화 : 02-1234-1234</li>
+                    <li>Copyright&copy;2022 All Right Reserved</li>
+                </ul>
+            </div>
+                            <hr/>
+            <div class = "footer_nav">
+                <a href="#">서비스 이용약관</a> | 
+                <a href="#">개인정보처리방침</a> | 
+                <a href="#">이용서비스현황</a> | 
+                <a href="#">이용규정</a> | 
+            </div>
+            </footer>
+</body>
+</html>

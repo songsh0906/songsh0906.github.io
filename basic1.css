@@ -1,0 +1,30 @@
+       /* 주의사항 <style></style> 넣지 않는다*/
+       /* 초기화 */
+       *{ margin : 0px; padding: 0px;}
+
+       /* body,a,... 선택자
+       태그 선택자 : 태그명 그대로 사용
+       클래스 선택자 : .클래스명
+       id선택자 : #id명*/
+
+       body{
+           width:960px;
+         margin : 0px auto;    /*가운데 정렬 */
+         
+       }
+       a{
+           text-decoration: none;
+           color: black;   /* #000000, #000, RGB(0,0,0) */
+       }
+       a:visited{   /* 한번 누르고 나서 보라색으로 나오는 걸 없애는 것*/
+           text-decoration: none;
+           color: black;   /* #000000, #000, RGB(0,0,0) */
+       }        
+       ul{margin : 0px; padding:0px;}
+       li{list-style: none;}
+
+       img{
+           border: 0px;
+           margin: 0px;
+           padding: 0px;
+       }

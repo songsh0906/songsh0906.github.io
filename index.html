@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>라히 베이킹 공방</title>
+    <link href="./basic1.css" rel="stylesheet">
+    <style>
+    .top_content{
+        /* 위치 고정 : 반드시 부모에게 width, height 값 설정 
+                        부모의 position: relative; 로 설정 */
+        width:960px;
+        height: 80px;  /*수정할 부분*/
+        position: relative;
+        margin-bottom: 10px;
+        margin: 0px;
+        padding: 0px;
+    }
+    /*위쪽 상단 부분*/
+    .top_header{   /* 로그인 회원가입*/
+        width: 960px;
+        height: 30px;  /*수정할 부분*/
+    }
+    .logo{     /* logo 들어있는 박스 */    
+        width: 800px;
+        height: 80px;
+        text-align: center;
+        line-height: 100%;   /*글 간격*/
+        margin: 0px auto;
+    }
+    .logo>a{  /* menu, store, delivery 정보 */
+        display: inline-block;
+        overflow: hidden;
+        padding: 20px 40px;    /*menu, store, delivery 간격*/
+        margin: 0px auto;
+    }
+    .logo img{
+        width: 50px;
+        height: 50px;
+        line-height: 70px;
+        margin-right: 10px;
+        margin-top:  50px;
+        margin: 0px auto;
+    }
+    .logo h3{
+        display: inline-block;
+        color: rgb(163, 100, 49);
+    }
+
+    .top_nav{       /*로그인 위, 오른쪽 마진*/
+        float: right;
+        margin-top: 5px;
+        margin-right: 30px;
+    }
+    .top_nav a{       /*로그인 hober크기*/   
+        display: inline-block;
+        padding: 0px 20px;
+        font-weight: 900;
+    }
+    .top_nav a:hover{
+        border-radius: 3px;   /*모서리 부분을 둥글게*/
+        background-color: rgb(247, 247, 247);
+    }
+
+    .main1{
+        text-align: center;
+    }
+    .table1{
+        width: 960px;
+        height: 200px;
+        margin: 0px auto;
+    }
+
+
+
+
+
+
+    footer{
+            width: 960px;  /* 100%*/
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin: 70px auto
+        }
+        hr{
+            width:960px;
+            margin: 0px auto;
+            /* margin-bottom: 10px;   수정할 부분 */
+        }
+        .footer_nav{
+            width:960px; /*수정할 부분*/
+            height : 40px;
+            line-height: 40px;
+            text-align: center;
+            margin: 0px auto;
+           /* margin-bottom: 10px;  수정할 부분*/
+        }
+        .footer_nav > a{
+            display: inline-block;
+            padding: 0px 10px;
+            font-size: 0.8rem;   /* 10pt, 12px, 0.8rem*/
+            
+        }
+        .footer_nav >a:hover{  /* a태그 글자(요소)에 마우스가 올라오면*/
+            color:blue;
+        }
+        .addr{
+            width:960px;
+            margin: 10px auto;
+
+        }
+        .addr li{
+          /* 수정할 부분 */
+            height : 22px;
+            line-height: 22px;
+            text-align: center;
+        }
+</style>
+
+
+<script>
+    let nCount = 0               
+    let imgAniTest = ""
+     let img1 = ""
+   
+     window.onload=function(){
+         //이미지 초기화
+        imgAniTest = document.getElementById("imgAniTest")
+        img1 = document.getElementById("img1")
+         
+         //타이머
+     /*    setInterval(function changeImage(){
+            nCount++;
+            if(nCount >=6){
+                nCount = 1;
+             }
+             img1.src = "D:/web0919_ssh/HTML_CSS/HTML/홈페이지 사진/" + nCount + ".jpg"
+        }, 2000) */
+      setInterval(changeImage, 2500)
+     }
+ function changeImage(){
+            nCount++;
+            if(nCount >=6){
+                nCount = 1;
+             }
+             img1.src = "./images/" + nCount + ".jpg"
+           }
+  </script>
+
+
+</head>
+<body>
+        <!--header 부분-->
+        <div div class="top_header">
+            <!-- logo 부분 -->
+
+            <!--로그인 회원가입 사이트맵-->
+            <div class="top_nav">
+                <a href="login.html"><h5>sign in</h5></a>
+                <a href="join.html"><h5>sign up</h5></a>
+            </div>
+        </div>
+        <div class="top_content">
+            <div class="logo">
+               <a href="index.html"><img src="./images/icon.png"></a>
+
+                <a href="introduction.html"><h3>소개</h3></a>
+                <a href="class.html"><h3>클래스</h3></a>
+                <a href="review.html"><h3>후기</h3></a>
+                <a href="news.html"><h3>새소식</h3></a>
+            </div>
+            </div>
+        <!--위쪽 상단 부분-->
+
+
+        <br/>
+            <hr width="960px">
+            <br/>
+            <div id="imgAniTest" class="image_nav">
+                <img id="img1" src="./images/1.jpg" width="960px" height="550px">
+            </div>
+            <br/><br/><br/><br/>
+            <div class="main1">
+                <h2>안녕하세요! 라히 베이킹 공방에 오신 걸 환영합니다!</h2>
+            </div>
+
+            <br/>
+            <table border="0" class="table1">
+                <tr>
+                    <th><a href="introduction.html"><img src="./images/baking7.jpg" width="200px" height="200px"><br/><h3>소개</h3></a></th>
+                    <th><a href="class.html"><img src="./images/baking8.jpg" width="200px" height="200px"><br/><h3>클래스</h3></a></th>
+                    <th><a href="review.html"><img src="./images/baking9.jpg" width="200px" height="200px"><br/><h3>후기</h3></a></th>
+                    <th><a href="news.html"><img src="./images/baking10.jpg" width="200px" height="200px"><br/><h3>새소식</h3></a></th>
+                </tr>
+            </table>
+
+
+
+
+            <footer> <!-- 시멘틱 태그, 바닥글 : 회사주소, 전화번호, ... -->
+                <hr/>
+            <div class="addr">
+                <ul>
+                    <li>상호 : 라히 베이킹공방  &nbsp;| &nbsp; 대표자 : ooo &nbsp; | &nbsp; </li>
+                    <li>소재지 : 서울시 &nbsp; | &nbsp; 대표전화 : 02-1234-1234</li>
+                    <li>Copyright&copy;2022 All Right Reserved</li>
+                </ul>
+            </div>
+                            <hr/>
+            <div class = "footer_nav">
+                <a href="#">서비스 이용약관</a> | 
+                <a href="#">개인정보처리방침</a> | 
+                <a href="#">이용서비스현황</a> | 
+                <a href="#">이용규정</a> | 
+            </div>
+            </footer>
+</body>
+</html>

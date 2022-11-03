@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>sign in</title>
+  <link href="./basic1.css" rel="stylesheet">
+ 
+  <style>
+       .top_content{
+        /* 위치 고정 : 반드시 부모에게 width, height 값 설정 
+                        부모의 position: relative; 로 설정 */
+        width:960px;
+        height: 80px;  /*수정할 부분*/
+        position: relative;
+        margin-bottom: 10px;
+        margin: 0px;
+        padding: 0px;
+    }
+    /*위쪽 상단 부분*/
+    .top_header{   /* 로그인 회원가입*/
+        width: 960px;
+        height: 30px;  /*수정할 부분*/
+
+
+    }
+    .logo{     /* logo 들어있는 박스 */    
+        width: 800px;
+        height: 80px;
+        text-align: center;
+        line-height: 100%;   /*글 간격*/
+        margin: 0px auto;
+    }
+    .logo>a{  /* menu, store, delivery 정보 */
+        display: inline-block;
+        overflow: hidden;
+        padding: 20px 40px;    /*menu, store, delivery 간격*/
+        margin: 0px auto;
+    }
+    .logo img{
+        width: 50px;
+        height: 50px;
+        line-height: 70px;
+        margin-right: 10px;
+        margin-top:  50px;
+        margin: 0px auto;
+    }
+    .logo h3{
+        display: inline-block;
+        color: rgb(163, 100, 49);
+    }
+    .top_nav{       /*로그인 위, 오른쪽 마진*/
+        float: right;
+        margin-top: 5px;
+        margin-right: 30px;
+
+    }
+    .top_nav a{       /*로그인 hober크기*/   
+        display: inline-block;
+        padding: 0px 20px;
+        font-weight: 900;
+    }
+    .top_nav a:hover{
+        border-radius: 3px;   /*모서리 부분을 둥글게*/
+        background-color: rgb(247, 247, 247)
+    }
+
+
+    .member_form{
+        width: 960px;
+    }
+    table{
+      border-collapse: collapse;
+      border-spacing: 0px;
+      margin: 0px auto;
+    }
+    tr{
+      height: 40px;
+      line-height: 40px;
+    }
+    td{
+      border: 1px solid black;
+
+    }
+    .head1{
+      text-align: center;
+      border: none;
+     }
+    .head1>h1{
+      margin-bottom: 10px;
+    }
+    .head2{
+      border: none;
+      height: 100px;
+
+    }
+    .head3{
+      border: none;
+    }
+    .head4{
+      border: none;
+      height: 100px;
+    }
+    .title{
+    width: 130px;  /* 수정할 부분 */
+    background-color: beige;
+    text-align: center;
+   }
+   .content{
+    width: 200px;
+    padding-left: 10px; /* 수정할 부분 */
+   }
+   .con1{
+    width: 250px;
+    height: 26px;
+   }
+  .p1{
+    width: 100px;
+    height: 26px;
+    line-height: 26px;
+  }
+  .a1{
+    width: 400px;
+    height: 26px;
+  }
+  .submit{
+    text-align: center;
+      border-top: none;
+      border-right: none;
+      border-bottom: none;  
+  }
+  .submit1{
+    text-align: center;
+      border: none; 
+  }
+  .submit2{
+    text-align: center;
+    border: none; 
+  }
+  .submit3{
+    text-align: center;
+    border: none; 
+  }
+  #submit{ /*  점(.) : 클래스 , # : id,  콤마(,) : 여러 선택자에 같은 스타일을 적용하고 싶을 때 */
+    width: 100px;
+    height: 60px;
+    margin-left: 20px;
+    background-color: papayawhip;
+    border-radius: 5px;
+    border: 0.8px solid rgb(152, 148, 148);
+  }
+  #submit1,#submit2{
+    text-align: center;
+    text-decoration: underline;
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: 0.8px solid rgb(255, 255, 255);
+    margin: 0px auto;
+  }
+  #submit3{ /*  점(.) : 클래스 , # : id,  콤마(,) : 여러 선택자에 같은 스타일을 적용하고 싶을 때 */
+    width: 465px;
+    height: 40px;
+    background-color: rgb(87, 243, 108);
+    border-radius: 5px;
+    border: 0.8px solid rgb(152, 148, 148);
+  }
+  #submit4{ /*  점(.) : 클래스 , # : id,  콤마(,) : 여러 선택자에 같은 스타일을 적용하고 싶을 때 */
+    width: 465px;
+    height: 40px;
+    background-color: rgb(240, 243, 87);
+    border-radius: 5px;
+    border: 0.8px solid rgb(152, 148, 148);
+  }
+  #submit5{ /*  점(.) : 클래스 , # : id,  콤마(,) : 여러 선택자에 같은 스타일을 적용하고 싶을 때 */
+    width: 465px;
+    height: 40px;
+    background-color: rgb(73, 143, 248);
+    border-radius: 5px;
+    border: 0.8px solid rgb(152, 148, 148);
+  }
+
+  footer{
+            width: 960px;  /* 100%*/
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin: 70px auto
+        }
+        hr{
+            width:960px;
+            margin: 0px auto;
+            /* margin-bottom: 10px;   수정할 부분 */
+        }
+        .footer_nav{
+            width:960px; /*수정할 부분*/
+            height : 40px;
+            line-height: 40px;
+            text-align: center;
+            margin: 0px auto;
+           /* margin-bottom: 10px;  수정할 부분*/
+        }
+        .footer_nav > a{
+            display: inline-block;
+            padding: 0px 10px;
+            font-size: 0.8rem;   /* 10pt, 12px, 0.8rem*/
+            
+        }
+        .footer_nav >a:hover{  /* a태그 글자(요소)에 마우스가 올라오면*/
+            color:blue;
+        }
+        .addr{
+            width:960px;
+            margin: 10px auto;
+
+        }
+        .addr li{
+          /* 수정할 부분 */
+            height : 22px;
+            line-height: 22px;
+            text-align: center;
+        }
+        .login1{
+          margin-top: 200px;
+        }
+        
+  </style>
+</head>
+<body>
+          <!--header 부분-->
+          <div div class="top_header">
+            <!-- logo 부분 -->
+
+            <!--로그인 회원가입 사이트맵-->
+            <div class="top_nav">
+              <a href="login.html"><h5>sign in</h5></a>
+              <a href="join.html"><h5>sign up</h5></a>
+            </div>
+        </div>
+        <div class="top_content">
+            <div class="logo">
+                <a href="index.html"><img src="./images/icon.png"></a>
+                <a href="introduction.html"><h3>소개</h3></a>
+                <a href="class.html"><h3>클래스</h3></a>
+                <a href="review.html"><h3>후기</h3></a>
+                <a href="news.html"><h3>새소식</h3></a>
+            </div>
+            </div>
+        <!--위쪽 상단 부분-->
+        <br/>
+        <hr width="960px">
+        <br/>
+
+
+
+  <form action="" name="membership">
+   <div class="member_form">
+    <br/><br/><br/><br/>
+     <table border="0">
+      <tr>
+        <td colspan="3" class="head1"><h1>sign in<br/><br/></h1></td>
+      </tr>
+      <tr>
+        <td class="title"><label for="id">아 이 디</label></td>
+        <td class="content"><input class="con1" type="text" name="id" id="id" required required placeholder="아이디를 입력하세요" style="width :150px"/></td>
+        <td class="submit" rowspan="2"><input type="submit" name="submit" id="submit" value="로그인" style="cursor: pointer"/>
+      </tr>
+      <tr>
+        <td class="title"><label for="password">비밀번호</label></td>
+        <td class="content"><input  class="con1" type="password" name="password" id="password" style="width :150px" required placeholder="비밀번호를 입력하세요"/></td>
+      </tr>
+      <tr>
+        <td class="submit1"><br/><input type="button" name="submit1" id="submit1" value="아이디 찾기" style="cursor: pointer"/>&nbsp;&nbsp;&nbsp;</td>
+        <td class="submit2"><br/><input type="button" name="submit2" id="submit2" value="비밀번호 찾기" style="cursor: pointer"/>&nbsp;&nbsp;&nbsp;</td>
+        <td class="submit2"><br/><a href="join.html"><input type="button" id="submit2" value="회원가입" style="cursor: pointer"></a></td>
+      </tr>
+      <tr>
+        <td colspan="3" class="head2"><a href="#"><input type="button" name="submit3" id="submit3" value="네이버로 로그인" style="cursor: pointer"/></a></td>
+      </tr>
+      <tr>
+        <td colspan="3" class="head3"><a href="#"><input type="button" name="submit4" id="submit4" value="카카오로 로그인" style="cursor: pointer"/></a></td>
+      </tr>
+      <tr>
+        <td colspan="3" class="head4"><a href="#"><input type="button" name="submit5" id="submit5" value="페이스북으로 로그인" style="cursor: pointer"/></a></td>
+      </tr>
+      </table>
+ </div>
+</form> 
+
+
+
+
+
+<footer> <!-- 시멘틱 태그, 바닥글 : 회사주소, 전화번호, ... -->
+  <hr/>
+<div class="addr">
+  <ul>
+    <li>상호 : 라히 베이킹공방  &nbsp;| &nbsp; 대표자 : ooo &nbsp; | &nbsp; </li>
+      <li>소재지 : 서울시 &nbsp; | &nbsp; 대표전화 : 02-1234-1234</li>
+      <li>Copyright&copy;2022 All Right Reserved</li>
+  </ul>
+</div>
+              <hr/>
+<div class = "footer_nav">
+  <a href="#">서비스 이용약관</a> | 
+  <a href="#">개인정보처리방침</a> | 
+  <a href="#">이용서비스현황</a> | 
+  <a href="#">이용규정</a> | 
+</div>
+</footer>
+</body>
+</html>
