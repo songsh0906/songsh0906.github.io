@@ -76,7 +76,7 @@ image:
 
 ## Git 설정
 - Remote: `https://github.com/songsh0906/songsh0906.github.io`
-- 로컬: `E:\깃블로그용 클로드\songsh0906.github.io`
+- 로컬: `E:\blog\songsh0906.github.io`
 - user.email: `songsh0906@naver.com`
 - user.name: `songsh0906`
 
